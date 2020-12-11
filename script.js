@@ -37,3 +37,11 @@ function operate(operator) {
             divide(num1, num2);  
     }
 }
+
+function clearContent() {
+    document.getElementById('display').innerText = "";
+}
+
+function displayVal(value) {
+    document.getElementById('display').innerHTML += value;
+}
