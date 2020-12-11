@@ -12,17 +12,17 @@
   <div>
       <table>
           <tr>
-            <td id = "display">436567765</td>
+            <td id = "display"></td>
           </tr>
           <tr>
             <td>
-                <button>AC</button>
+                <button id = 'clear' onclick = "clearContent()">AC</button>
             </td>
             <td>
-                <button>+/-</button>
+                <button id = 'signChange'>+/-</button>
             </td>
             <td>
-                <button>%</button>
+                <button id = 'perecentChange'>%</button>
             </td>
             <td>
                 <button>/</button>
@@ -30,13 +30,13 @@
           </tr>
           <tr>
             <td>
-                <button class = "num">7</button>
+                <button class = "num" value = '7' onclick = "displayVal(this.value)">7</button>
             </td>
             <td>
-                <button class = "num">8</button>
+                <button class = "num" value = '8' onclick = "displayVal(this.value)">8</button>
             </td>
             <td>
-                <button class = "num">9</button>
+                <button class = "num" value = '9' onclick = "displayVal(this.value)">9</button>
             </td>
             <td>
                 <button>*</button>
@@ -44,13 +44,13 @@
           </tr>
           <tr>
             <td>
-                <button class = "num">4</button>
+                <button class = "num" value = '4' onclick = "displayVal(this.value)">4</button>
             </td>
             <td>
-                <button class = "num">5</button>
+                <button class = "num" value = '5' onclick = "displayVal(this.value)">5</button>
             </td>
             <td>
-                <button class = "num">6</button>
+                <button class = "num" value = '6' onclick = "displayVal(this.value)">6</button>
             </td>
             <td>
                 <button>-</button>
@@ -58,13 +58,13 @@
           </tr>
           <tr>
             <td>
-                <button class = "num">1</button>
+                <button class = "num" value = '1' onclick = "displayVal(this.value)">1</button>
             </td>
             <td>
-                <button class = "num">2</button>
+                <button class = "num" value = '2' onclick = "displayVal(this.value)">2</button>
             </td>
             <td>
-                <button class = "num">3</button>
+                <button class = "num" value = '3' onclick = "displayVal(this.value)">3</button>
             </td>
             <td>
                 <button>+</button>
@@ -72,7 +72,7 @@
           </tr>
           <tr>
             <td>
-                <button class = "num">0</button>
+                <button class = "num" value = '0' onclick = "displayVal(this.value)">0</button>
             </td>
             <td>
                 <button>.</button>
