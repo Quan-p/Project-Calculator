@@ -1,0 +1,39 @@
+#container {
+    width: 310px;
+    height: 610px;
+    align-content: center;
+}
+
+table {
+    border: 1px thin black;
+    table-layout: fixed;
+    width: 300px;
+    height: 600px;
+}
+
+td {
+    width: 100px;
+}
+
+#display {
+    border: thin solid;
+    border-color: black;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 55px;
+    text-align: right;
+    background-color: seashell;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+
+}
+
+#zero {
+    width: 145px;
+}
+
