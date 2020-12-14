@@ -1,5 +1,6 @@
 var num1;
 var num2;
+var num3;
 
 function add(num1, num2) {
     var sum = num1 + num2;
@@ -43,5 +44,9 @@ function clearContent() {
 }
 
 function displayVal(value) {
-    document.getElementById('display').innerHTML += value;
+    if (document.getElementById('display').innerHTML.length < 11) {
+        document.getElementById('display').innerHTML += value;
+    } else {
+        alert ("Number limit reached");
+    }
 }
