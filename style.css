@@ -24,6 +24,8 @@ td {
     font-size: 55px;
     text-align: right;
     background-color: seashell;
+    width: 300px;
+    height: 90px;
 }
 
 button {
