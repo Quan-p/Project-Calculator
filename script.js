@@ -49,8 +49,20 @@ function clearContent() {
 }
 
 var clicked = false;
-console.log(document.getElementsByClassName('operator'));
+
 document.getElementById('addition').onclick = function() {
+    clicked = true;
+}
+
+document.getElementById('subtract').onclick = function() {
+    clicked = true;
+}
+
+document.getElementById('multiply').onclick = function() {
+    clicked = true;
+}
+
+document.getElementById('divide').onclick = function() {
     clicked = true;
 }
   
