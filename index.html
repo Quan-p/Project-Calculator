@@ -8,11 +8,10 @@
 </head>
 
 <body>
-  <script src="script.js"></script>
   <div id = 'container'>
       <table>
           <tr>
-            <td colspan = '4' id = "display">234234</td>
+            <td colspan = '4' id = "display"></td>
           </tr>
           <tr>
             <td>
@@ -25,7 +24,7 @@
                 <button id = 'perecentChange'>%</button>
             </td>
             <td>
-                <button>/</button>
+                <button class = 'operator'>/</button>
             </td>
           </tr>
           <tr>
@@ -39,7 +38,7 @@
                 <button class = "num" value = '9' onclick = "displayVal(this.value)">9</button>
             </td>
             <td>
-                <button>*</button>
+                <button class = 'operator'>*</button>
             </td>
           </tr>
           <tr>
@@ -53,7 +52,7 @@
                 <button class = "num" value = '6' onclick = "displayVal(this.value)">6</button>
             </td>
             <td>
-                <button>-</button>
+                <button class = 'operator'>-</button>
             </td>
           </tr>
           <tr>
@@ -67,12 +66,12 @@
                 <button class = "num" value = '3' onclick = "displayVal(this.value)">3</button>
             </td>
             <td>
-                <button>+</button>
+                <button class = 'operator' id = 'addition' onclick = "add(num1, num2)">+</button>
             </td>
           </tr>
           <tr>
             <td>
-                <button class = "num" colspan = '2' id = 'zero' value = '0' onclick = "displayVal(this.value)">0</button>
+                <button class = "num" colspan = '2' id = "zero" value = '0' onclick = "displayVal(this.value)">0</button>
             </td>
             <td></td>
             <td>
@@ -84,5 +83,6 @@
           </tr>
       </table>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

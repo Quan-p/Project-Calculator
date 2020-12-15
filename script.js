@@ -1,8 +1,13 @@
 var num1;
 var num2;
-var num3;
+var op;
 
 function add(num1, num2) {
+    num1 = document.getElementById('display').innerHTML
+    if (typeof num1 === 'number') {
+        op = '+';
+    }
+
     var sum = num1 + num2;
     return sum;
 }
@@ -43,10 +48,24 @@ function clearContent() {
     document.getElementById('display').innerText = "";
 }
 
+var clicked = false;
+console.log(document.getElementsByClassName('operator'));
+document.getElementById('addition').onclick = function() {
+    clicked = true;
+}
+  
+
 function displayVal(value) {
     if (document.getElementById('display').innerHTML.length < 11) {
         document.getElementById('display').innerHTML += value;
     } else {
         alert ("Number limit reached");
     }
+
+    if (clicked) {
+        clearContent();
+        document.getElementById('display').innerHTML += value;
+        clicked = false;
+    }
+
 }
