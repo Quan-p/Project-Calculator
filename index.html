@@ -24,7 +24,7 @@
                 <button id = 'perecentChange'>%</button>
             </td>
             <td>
-                <button class = 'operator' id = 'divide'>/</button>
+                <button class = 'operator' id = 'divide' value = '/' onclick = "numSave(this.value)">/</button>
             </td>
           </tr>
           <tr>
@@ -38,7 +38,7 @@
                 <button class = "num" value = '9' onclick = "displayVal(this.value)">9</button>
             </td>
             <td>
-                <button class = 'operator' id = 'multiply'>*</button>
+                <button class = 'operator' id = 'multiply' value = '*' onclick = "numSave(this.value)">*</button>
             </td>
           </tr>
           <tr>
@@ -52,7 +52,7 @@
                 <button class = "num" value = '6' onclick = "displayVal(this.value)">6</button>
             </td>
             <td>
-                <button class = 'operator' id = 'subtract'>-</button>
+                <button class = 'operator' id = 'subtract' value = '-' onclick = "numSave(this.value)">-</button>
             </td>
           </tr>
           <tr>
@@ -66,7 +66,7 @@
                 <button class = "num" value = '3' onclick = "displayVal(this.value)">3</button>
             </td>
             <td>
-                <button class = 'operator' id = 'addition' onclick = "add(num1, num2)">+</button>
+                <button class = "operator" id = "addition" value = '+' onclick = "numSave(this.value)">+</button>
             </td>
           </tr>
           <tr>

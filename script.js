@@ -1,15 +1,5 @@
-var num1;
-var num2;
-var op;
-
-function add(num1, num2) {
-    num1 = document.getElementById('display').innerHTML
-    if (typeof num1 === 'number') {
-        op = '+';
-    }
-
-    var sum = num1 + num2;
-    return sum;
+function add() {
+    
 }
 
 function subtract(num1, num2) {
@@ -50,21 +40,21 @@ function clearContent() {
 
 var clicked = false;
 
-document.getElementById('addition').onclick = function() {
-    clicked = true;
-}
+// document.getElementById('addition').onclick = function() {
+//     clicked = true;
+// }
 
-document.getElementById('subtract').onclick = function() {
-    clicked = true;
-}
+// document.getElementById('subtract').onclick = function() {
+//     clicked = true;
+// }
 
-document.getElementById('multiply').onclick = function() {
-    clicked = true;
-}
+// document.getElementById('multiply').onclick = function() {
+//     clicked = true;
+// }
 
-document.getElementById('divide').onclick = function() {
-    clicked = true;
-}
+// document.getElementById('divide').onclick = function() {
+//     clicked = true;
+// }
   
 
 function displayVal(value) {
@@ -80,4 +70,14 @@ function displayVal(value) {
         clicked = false;
     }
 
+}
+
+function numSave(value) {
+    num1 = document.getElementById('display').textContent;
+    num1 = parseInt(num1);
+
+    var opClicked = value;
+    console.log(opClicked);
+    
+    clicked = true;
 }
