@@ -23,7 +23,6 @@ function numSave(value) {
     num1 = parseInt(num1);
 
     opClicked = value;
-
     clicked = true;
 
 }
@@ -43,25 +42,30 @@ function equal() {
 function add(num1, num2) {
     var sum = num1 + num2;
     document.getElementById('display').innerHTML = sum;
-    sum = num1;
+    num1 = sum;
+    
 }
 
 function subtract(num1, num2) {
     var diff = num1 - num2;
     document.getElementById('display').innerHTML = diff;
-    diff = num1;
+    num1 = diff;
+    
+    
 }
 
 function multiply(num1, num2) {
     var prod = num1 * num2;
     document.getElementById('display').innerHTML = prod;
-    prod = num1;
+    num1 = prod;
+    
 }
 
 function divide(num1, num2) {
     var quot = num1 / num2;
     document.getElementById('display').innerHTML = quot;
-    prod = num1;
+    num1 = quot;
+    
 }
 
 function operate(opClicked) {
@@ -71,7 +75,6 @@ function operate(opClicked) {
             break;
         case "-":
             subtract(num1, num2);
-
             break;
         case "*":
             multiply(num1, num2);
