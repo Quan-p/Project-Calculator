@@ -1,5 +1,10 @@
+var num1;
+var num2;
+
 function clearContent() {
     document.getElementById('display').innerText = "";
+    num1 = undefined;
+    num2 = undefined;
 }
 
 var clicked = false;  
@@ -12,14 +17,11 @@ function displayVal(value) {
     }
 
     if (clicked) {
-        clearContent();
+        document.getElementById('display').innerText = "";
         document.getElementById('display').innerHTML += value;
         clicked = false;
     }
 }
-
-var num1;
-var num2;
 
 function numSave(value) {
     // num1 = document.getElementById('display').textContent;
