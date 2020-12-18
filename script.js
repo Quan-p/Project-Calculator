@@ -15,7 +15,6 @@ function displayVal(value) {
     } else {
         alert ("Number limit reached");
     }
-
     if (clicked) {
         document.getElementById('display').innerText = "";
         document.getElementById('display').innerHTML += value;
@@ -23,25 +22,23 @@ function displayVal(value) {
     }
 }
 
-function numSave(value) {
-    // num1 = document.getElementById('display').textContent;
-    // num1 = parseInt(num1);
+var equalClicked = false;
 
+function numSave(value) {
     opClicked = value;
     clicked = true;
 
     if(typeof(num1) == 'undefined') {
         num1 = document.getElementById('display').textContent;
-        num1 = parseInt(num1);
+        num1 = parseFloat(num1);
+        
+    } else if (equalClicked = true){
+        equalClicked = false;
     } else {
         num2 = document.getElementById('display').textContent;
-        num2 = parseInt(num2);
+        num2 = parseFloat(num2);
         operate(opClicked);
-    }
-    // if (typeof(num1) == 'number') {
-    //     num2 = document.getElementById('display').textContent;
-    //     num2 = parseInt(num2);
-    // }
+    } 
 }
 
 var opClicked;
@@ -50,6 +47,7 @@ function equal() {
     if (typeof(num1) == 'number') {
         num2 = document.getElementById('display').textContent;
         num2 = parseInt(num2);
+        equalClicked = true;
     }
     operate(opClicked);
 }
@@ -82,7 +80,6 @@ function operate(opClicked) {
     switch (opClicked) {
         case "+":
             add(num1, num2);
-            //num2 = null;
             break;
         case "-":
             subtract(num1, num2);
