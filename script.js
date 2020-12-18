@@ -18,13 +18,28 @@ function displayVal(value) {
     }
 }
 
+var num1;
+var num2;
+
 function numSave(value) {
-    num1 = document.getElementById('display').textContent;
-    num1 = parseInt(num1);
+    // num1 = document.getElementById('display').textContent;
+    // num1 = parseInt(num1);
 
     opClicked = value;
     clicked = true;
 
+    if(typeof(num1) == 'undefined') {
+        num1 = document.getElementById('display').textContent;
+        num1 = parseInt(num1);
+    } else {
+        num2 = document.getElementById('display').textContent;
+        num2 = parseInt(num2);
+        operate(opClicked);
+    }
+    // if (typeof(num1) == 'number') {
+    //     num2 = document.getElementById('display').textContent;
+    //     num2 = parseInt(num2);
+    // }
 }
 
 var opClicked;
@@ -37,41 +52,35 @@ function equal() {
     operate(opClicked);
 }
 
-
-
 function add(num1, num2) {
     var sum = num1 + num2;
     document.getElementById('display').innerHTML = sum;
-    num1 = sum;
-    
+    this.num1 = sum;
 }
 
 function subtract(num1, num2) {
     var diff = num1 - num2;
     document.getElementById('display').innerHTML = diff;
-    num1 = diff;
-    
-    
+    this.num1 = diff;    
 }
 
 function multiply(num1, num2) {
     var prod = num1 * num2;
     document.getElementById('display').innerHTML = prod;
-    num1 = prod;
-    
+    this.num1 = prod;  
 }
 
 function divide(num1, num2) {
     var quot = num1 / num2;
     document.getElementById('display').innerHTML = quot;
-    num1 = quot;
-    
+    this.num1 = quot;  
 }
 
 function operate(opClicked) {
     switch (opClicked) {
         case "+":
             add(num1, num2);
+            //num2 = null;
             break;
         case "-":
             subtract(num1, num2);
