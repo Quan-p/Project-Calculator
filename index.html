@@ -8,77 +8,77 @@
 </head>
 
 <body>
-  <div id = 'container'>
+  <div id="container">
       <table>
           <tr>
-            <td colspan = '4' id = "display"></td>
+            <td colspan="4" id="display"></td>
           </tr>
           <tr>
             <td>
-                <button id = 'clear' onclick = "clearContent()">AC</button>
+                <button id="clear" onclick="clearContent()">AC</button>
             </td>
             <td>
-                <button id = 'signChange'>+/-</button>
+                <button id="signChange">+/-</button>
             </td>
             <td>
-                <button id = 'perecentChange'>%</button>
+                <button id="perecentChange">%</button>
             </td>
             <td>
-                <button class = 'operator' id = 'divide' value = '/' onclick = "numSave(this.value)">/</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-                <button class = "num" value = '7' onclick = "displayVal(this.value)">7</button>
-            </td>
-            <td>
-                <button class = "num" value = '8' onclick = "displayVal(this.value)">8</button>
-            </td>
-            <td>
-                <button class = "num" value = '9' onclick = "displayVal(this.value)">9</button>
-            </td>
-            <td>
-                <button class = 'operator' id = 'multiply' value = '*' onclick = "numSave(this.value)">*</button>
+                <button class="operator" id="divide" value="/" onclick="numSave(this.value)">/</button>
             </td>
           </tr>
           <tr>
             <td>
-                <button class = "num" value = '4' onclick = "displayVal(this.value)">4</button>
+                <button class="num" value="7" onclick="displayVal(this.value)">7</button>
             </td>
             <td>
-                <button class = "num" value = '5' onclick = "displayVal(this.value)">5</button>
+                <button class="num" value="8" onclick="displayVal(this.value)">8</button>
             </td>
             <td>
-                <button class = "num" value = '6' onclick = "displayVal(this.value)">6</button>
+                <button class="num" value="9" onclick="displayVal(this.value)">9</button>
             </td>
             <td>
-                <button class = 'operator' id = 'subtract' value = '-' onclick = "numSave(this.value)">-</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-                <button class = "num" value = '1' onclick = "displayVal(this.value)">1</button>
-            </td>
-            <td>
-                <button class = "num" value = '2' onclick = "displayVal(this.value)">2</button>
-            </td>
-            <td>
-                <button class = "num" value = '3' onclick = "displayVal(this.value)">3</button>
-            </td>
-            <td>
-                <button class = "operator" id = "addition" value = '+' onclick = "numSave(this.value)">+</button>
+                <button class="operator" id="multiply" value="*" onclick="numSave(this.value)">*</button>
             </td>
           </tr>
           <tr>
             <td>
-                <button class = "num" colspan = '2' id = "zero" value = '0' onclick = "displayVal(this.value)">0</button>
+                <button class="num" value="4" onclick="displayVal(this.value)">4</button>
+            </td>
+            <td>
+                <button class="num" value="5" onclick="displayVal(this.value)">5</button>
+            </td>
+            <td>
+                <button class="num" value="6" onclick="displayVal(this.value)">6</button>
+            </td>
+            <td>
+                <button class="operator" id="subtract" value="-" onclick="numSave(this.value)">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <button class="num" value="1" onclick="displayVal(this.value)">1</button>
+            </td>
+            <td>
+                <button class="num" value="2" onclick="displayVal(this.value)">2</button>
+            </td>
+            <td>
+                <button class="num" value="3" onclick="displayVal(this.value)">3</button>
+            </td>
+            <td>
+                <button class="operator" id="addition" value="+" onclick="numSave(this.value)">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <button class="num" colspan="2" id="zero" value="0" onclick="displayVal(this.value)">0</button>
             </td>
             <td></td>
             <td>
-                <button id = "decimal" value = '.' onclick = displayVal(this.value)>.</button>
+                <button id="decimal" value ="." onclick="displayVal(this.value)">.</button>
             </td>
             <td>
-                <button onclick = "equal()">=</button>
+                <button onclick="equal()">=</button>
             </td>
           </tr>
       </table>
