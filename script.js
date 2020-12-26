@@ -25,9 +25,6 @@ function displayVal(value) {
 var equalClicked = false;
 
 function numSave(value) {
-    opClicked = value;
-    clicked = true;
-
     if(typeof(num1) == 'undefined') {
         num1 = document.getElementById('display').textContent;
         num1 = parseFloat(num1);
@@ -37,8 +34,10 @@ function numSave(value) {
     } else {
         num2 = document.getElementById('display').textContent;
         num2 = parseFloat(num2);
-        operate(opClicked);
-    } 
+        operate();
+    }
+    opClicked = value;
+    clicked = true;
 }
 
 var opClicked;
@@ -49,7 +48,7 @@ function equal() {
         num2 = parseInt(num2);
         equalClicked = true;
     }
-    operate(opClicked);
+    operate();
 }
 
 function add(num1, num2) {
@@ -76,7 +75,7 @@ function divide(num1, num2) {
     this.num1 = quot;  
 }
 
-function operate(opClicked) {
+function operate() {
     switch (opClicked) {
         case "+":
             add(num1, num2);
