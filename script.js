@@ -32,7 +32,7 @@ function numSave(value) {
         num1 = document.getElementById('display').textContent;
         num1 = parseFloat(num1);
         
-    } else if (equalClicked = true){
+    } else if (equalClicked){
         equalClicked = false;
     } else {
         num2 = document.getElementById('display').textContent;
