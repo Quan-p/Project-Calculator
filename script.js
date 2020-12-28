@@ -45,7 +45,7 @@ var opClicked;
 function equal() {
     if (typeof(num1) == 'number') {
         num2 = document.getElementById('display').textContent;
-        num2 = parseInt(num2);
+        num2 = parseFloat(num2);
         equalClicked = true;
     }
     operate();
