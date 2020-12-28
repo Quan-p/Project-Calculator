@@ -8,13 +8,17 @@ function clearContent() {
 }
 
 var clicked = false;  
+var numCap = false;
 
 function displayVal(value) {
     if (document.getElementById('display').innerHTML.length < 11) {
         document.getElementById('display').innerHTML += value;
-    } else {
+    } else if (!clicked) {
         alert ("Number limit reached");
+        //if operator has not been clicked, give alert
+        //prevents multiple alerts from happening right after the display is cleared
     }
+
     if (clicked) {
         document.getElementById('display').innerText = "";
         document.getElementById('display').innerHTML += value;
@@ -88,5 +92,9 @@ function operate() {
             break;
         case "/":
             divide(num1, num2);  
+    }
+
+    if(num1.length > 11) {
+        num1 = num1.toFixed(11);
     }
 }
