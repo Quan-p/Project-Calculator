@@ -57,24 +57,48 @@ function equal() {
 
 function add(num1, num2) {
     var sum = num1 + num2;
+    var numString = sum.toString();
+    var numArray = numString.split(".");
+    if (numString.length > 11) {
+        var postDec = 10 - numArray[0].length;
+        sum = parseFloat(numString).toFixed(postDec);
+    }
     document.getElementById('display').innerHTML = sum;
     this.num1 = sum;
 }
 
 function subtract(num1, num2) {
     var diff = num1 - num2;
+    var numString = diff.toString();
+    var numArray = numString.split(".");
+    if (numString.length > 11) {
+        var postDec = 10 - numArray[0].length;
+        diff = parseFloat(numString).toFixed(postDec);
+    }
     document.getElementById('display').innerHTML = diff;
     this.num1 = diff;    
 }
 
 function multiply(num1, num2) {
     var prod = num1 * num2;
+    var numString = prod.toString();
+    var numArray = numString.split(".");
+    if (numString.length > 11) {
+        var postDec = 10 - numArray[0].length;
+        prod = parseFloat(numString).toFixed(postDec);
+    }
     document.getElementById('display').innerHTML = prod;
     this.num1 = prod;  
 }
 
 function divide(num1, num2) {
     var quot = num1 / num2;
+    var numString = quot.toString();
+    var numArray = numString.split(".");
+    if (numString.length > 11) {
+        var postDec = 10 - numArray[0].length;
+        quot = parseFloat(numString).toFixed(postDec);
+    }
     document.getElementById('display').innerHTML = quot;
     this.num1 = quot;  
 }
@@ -92,9 +116,5 @@ function operate() {
             break;
         case "/":
             divide(num1, num2);  
-    }
-
-    if(num1.length > 11) {
-        num1 = num1.toFixed(11);
     }
 }
