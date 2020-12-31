@@ -130,3 +130,27 @@ function symChange() {
         document.getElementById('display').innerText = strStore;
     }
 }
+
+function addSub() {
+    
+}
+
+function multDiv() {
+    
+}
+
+function symPercent() {
+    switch (opClicked) {
+        case "+":
+            
+            break;
+        case "-":
+            
+            break;
+        case "*":
+            
+            break;
+        case "/":
+            
+    }
+}
