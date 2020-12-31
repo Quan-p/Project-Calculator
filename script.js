@@ -118,3 +118,15 @@ function operate() {
             divide(num1, num2);  
     }
 }
+
+function symChange() {
+    var strStore = document.getElementById('display').innerText;
+    if (strStore.includes("-")) {
+        var posString = strStore.split("-").pop();
+        document.getElementById('display').innerText = posString;
+        //pop removes the everything after negative sign from array and returns that element
+    } else {
+        strStore = "-" + strStore;
+        document.getElementById('display').innerText = strStore;
+    }
+}
