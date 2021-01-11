@@ -55,12 +55,12 @@ function percentKey() {
 }
 
 function equal() {
-    if (typeof(num1) == 'number') {
+    if (typeof(num2) == 'number') {
+        equalClicked = true;
+    } else {
         num2 = document.getElementById('display').textContent;
         num2 = parseFloat(num2);
         equalClicked = true;
-    } else {
-        
     }
     operate();
 }
