@@ -46,11 +46,21 @@ function numSave(value) {
 
 var opClicked;
 
+function percentKey() {
+    num2 = document.getElementById('display').textContent;
+    num2 = parseFloat(num2);
+    
+    var perCalc = num1 * num2 / 100      
+    num2 = perCalc;
+}
+
 function equal() {
     if (typeof(num1) == 'number') {
         num2 = document.getElementById('display').textContent;
         num2 = parseFloat(num2);
         equalClicked = true;
+    } else {
+        
     }
     operate();
 }
@@ -131,26 +141,5 @@ function symChange() {
     }
 }
 
-function addSub() {
-    
-}
 
-function multDiv() {
-    
-}
 
-function symPercent() {
-    switch (opClicked) {
-        case "+":
-            
-            break;
-        case "-":
-            
-            break;
-        case "*":
-            
-            break;
-        case "/":
-            
-    }
-}
