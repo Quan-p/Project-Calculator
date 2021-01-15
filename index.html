@@ -17,13 +17,13 @@
           </tr>
           <tr>
             <td>
-                <button id="clear" onclick="clearContent()">AC</button>
+                <button class="special" id="clear" onclick="clearContent()">AC</button>
             </td>
             <td>
-                <button id="signChange" onclick="symChange()">+/-</button>
+                <button class="special" id="signChange" onclick="symChange()">+/-</button>
             </td>
             <td>
-                <button id="percentChange" onclick="percentKey()">%</button>
+                <button class="special" id="percentChange" onclick="percentKey()">%</button>
             </td>
             <td>
                 <button class="operator" id="divide" value="/" onclick="numSave(this.value)">/</button>
@@ -80,7 +80,7 @@
                 <button id="decimal" value ="." onclick="displayVal(this.value)">.</button>
             </td>
             <td>
-                <button onclick="equal()">=</button>
+                <button id="equal" onclick="equal()">=</button>
             </td>
           </tr>
       </table>

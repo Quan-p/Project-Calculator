@@ -1,7 +1,13 @@
 #container {
-    width: 310px;
-    height: 610px;
-    align-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
 }
 
 table {
@@ -15,7 +21,6 @@ table {
 
 td {
     width: 100px;
-    
 }
 
 #display {
@@ -52,4 +57,23 @@ button:hover {
 
 #zero {
     width: 145px;
+}
+
+#equal {
+    background-color: #007090;
+    color: #D5D6D7;
+}
+
+#equal:hover {
+    background-color: #01A7C2;
+}
+
+.operator {
+    background-color: #018CA9;
+    color: #D5D6D7;
+}
+
+.special {
+    background-color: #018CA9;
+    color: #D5D6D7;
 }
